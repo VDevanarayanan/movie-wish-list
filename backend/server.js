@@ -26,7 +26,7 @@ const Favorite = mongoose.model("Favorite", movieSchema);
 
 // ✅ Middleware
 app.use(cors({
-  origin: ["http://localhost:3000","https://movie-frontend-7bcn.onrender.com"],
+  origin: process.env.CORS_ORIGIN || "http://localhost:3000",
   methods: ["GET", "POST", "DELETE"],
   allowedHeaders: ["Content-Type"],
   credentials: true,
