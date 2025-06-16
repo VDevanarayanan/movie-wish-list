@@ -1,8 +1,8 @@
-# Node dependencies (for both root and frontend)
+# Node dependencies (root + frontend)
 node_modules/
 frontend/node_modules/
 
-# dotenv
+# Environment variables (never commit secrets)
 .env
 .env.*.local
 
@@ -11,22 +11,32 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS / Editor
+# OS-specific files
 .DS_Store
 
-# Testing
+# Testing coverage
 /coverage
 
-# Production builds
-/build
+# Production builds (React)
 frontend/build/
+build/
 
-# PnP
+# Package manager files
 .pnp
 .pnp.js
 
-# Vite / CRA
+# Local dev server configs / misc
 *.local
 
-# Misc
-favorites.json
+# Backup or temp files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# Optional: Ignore uploads or data directories if you add them later
+# /uploads
+# /data

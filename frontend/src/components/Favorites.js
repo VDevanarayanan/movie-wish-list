@@ -8,7 +8,7 @@ const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/favorites')
+    axios.get('https://movie-backend-1-3lad.onrender.com/favorites')
       .then(res => {
         if (Array.isArray(res.data.favorites)) {
           setFavorites(res.data.favorites);
