@@ -1,0 +1,22 @@
+form {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+  }
+  
+  button {
+    padding: 10px 16px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

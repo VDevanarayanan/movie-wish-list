@@ -1,0 +1,16 @@
+.favorites-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .favorites-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .empty-message {
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 40px;
+  }
+  

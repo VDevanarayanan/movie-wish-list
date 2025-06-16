@@ -1,0 +1,25 @@
+/* src/App.css */
+nav {
+  background-color: #1c1c1c;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+nav a.active {
+  background-color: #444;
+}
