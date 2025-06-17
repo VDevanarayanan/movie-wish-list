@@ -8,7 +8,7 @@ const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    axios.get('https://movie-backend-1-3lad.onrender.com/favorites')
+    axios.get('https://movie-backend-vtje.onrender.com/favorites')
       .then(res => {
         if (Array.isArray(res.data.favorites)) {
           setFavorites(res.data.favorites);
@@ -25,7 +25,7 @@ const Favorites = () => {
 
   const handleRemove = async (movie) => {
     try {
-      await axios.delete(`http://localhost:5000/favorites/${movie.id}`);
+      await axios.delete(`https://movie-backend-vtje.onrender.com/favorites/${movie.id}`);
       setFavorites(prev => prev.filter(f => f.id !== movie.id));
     } catch (error) {
       console.error("Failed to delete movie from favorites:", error);
