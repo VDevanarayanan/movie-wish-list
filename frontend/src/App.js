@@ -25,7 +25,7 @@ const App = () => {
 
   const handleLike = async (movie) => {
     try {
-      await axios.post('http://localhost:5000/favorites', {
+      await axios.post('https://movie-backend-vtje.onrender.com/favorites', {
         id: movie.id,
         title: movie.title,
         poster_path: movie.poster_path,
